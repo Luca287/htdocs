@@ -7,6 +7,7 @@
     <meta name="author" content= "Luca Pinotti">
     <meta name="description" content= "Pagina web sobre tienda de ropa">
     <title>Indumentaria Luca</title>
+    <link rel="stylesheet" href="./CSS/estilos.css"> 
 </head>
 <body>
     <header>
@@ -15,24 +16,24 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#Nuestro negocio-id">Nuestro Negocio</a>
+                    <a href="#negocio-id">Nuestro Negocio</a>
                 </li>
                 <li>
-                    <a href="#Que Ofrecemos-id">Que Ofrecemos</a>
+                    <a href="#ofrecemos-id">Que Ofrecemos</a>
                 </li>
                 <li>
-                    <a href="#Donde Encontrarnos-id">Donde Encontranos Y Medios de Pago</a>
+                    <a href="#encontrarnos-id">Donde Encontranos Y Medios de Pago</a>
                 </li>
             </ul>
-        </nav>
+        </nav> 
     </header>
     <main>
-        <section id="Nuestro negocio">
+        <section id="negocio">
             <img src="./imagenes/Foto de pagina principal, nuestro negocio.jpg" alt="">
             <p>Negocio familiar donde encontrara indumentaria para toda la familia</p>
         </section>
-        <section id="Que Ofrecemos">
-            <h2>Que Ofrecemos</h2>
+        <section id="ofrecemos">
+            <h2>Que Ofrecemos</h2> 
             <p>Ropa elegante o casual,para mujer u hombre,bebe o adulto,tenemos todo en nuetra tienda</p>           
             <div>
             <img src="./imagenes/que ofrecemos imagen 1.jpg" alt="">
@@ -82,7 +83,7 @@
                 </ul>
             </div>
         </section>
-        <section id="Donde Encontrarnos">
+        <section id="encontrarnos">
             <h2>Donde Encontranos Y Medios de pago</h2>
             <p> Encuentre su tienda mas cercana haciendo click en este mapa, aceptamos todas las tarjetas y mercado de pago.</p>
             <p>Proximamente tienda online</p>
