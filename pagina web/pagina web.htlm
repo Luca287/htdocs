@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content= "Luca Pinotti">
+    <meta name="description" content= "Pagina web sobre tienda de ropa">
+    <title>Indumentaria Luca</title>
+</head>
+<body>
+    <header>
+        <h1> <i>Indumentaria Luca</i></h1>
+        <img src="./imagenes/imagen del logo.jpg" alt="logo">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#Nuestro negocio-id">Nuestro Negocio</a>
+                </li>
+                <li>
+                    <a href="#Que Ofrecemos-id">Que Ofrecemos</a>
+                </li>
+                <li>
+                    <a href="#Donde Encontrarnos-id">Donde Encontranos Y Medios de Pago</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Nuestro negocio">
+            <img src="./imagenes/Foto de pagina principal, nuestro negocio.jpg" alt="">
+            <p>Negocio familiar donde encontrara indumentaria para toda la familia</p>
+        </section>
+        <section id="Que Ofrecemos">
+            <h2>Que Ofrecemos</h2>
+            <p>Ropa elegante o casual,para mujer u hombre,bebe o adulto,tenemos todo en nuetra tienda</p>           
+            <div>
+            <img src="./imagenes/que ofrecemos imagen 1.jpg" alt="">
+            <img src="./imagenes/que ofrecemos imagen 2.jpg" alt="">
+            <img src="./imagenes/que ofrecemos imagen 3.jpg" alt="">
+            <img src="./imagenes/que ofrecemos imagen 4.jpg" alt="">
+            <img src="./imagenes/que ofrecemos imagen 5.avif" alt="">
+            <img src="./imagenes/que ofrecemos imagen 6.jpg" alt="">   
+            </div>
+            <div>
+                <h3>Mercaderia</h3>
+                <h4>ropa de hombre</h4>
+                <ul>
+                    <li>boxers y calzoncillos</li>
+                    <li>medias</li>
+                    <li>jeans</li>
+                    <li>pantalones de vestir</li>
+                    <li>remeras</li>
+                    <li>sueters</li>
+                    <li>buzos</li>
+                    <li>camperas de abrigo, comunes y rompeviento </li>
+                    <li>vestimenta termica</li>
+                    <li>trajes</li>
+                    <li>moños,corbatas y cinturones</li>
+                    <li>camisas</li>
+                    <li>gorras</li>
+                    <li>mallas</li>
+                    <li>ropa deportiva</li>
+                    <li>baberos para bebe</li>
+                </ul>
+                <h4> ropa de mujer</h4>
+                <ul>
+                    <li>faldas</li>
+                    <li>remeras</li>
+                    <li>sueters</li>
+                    <li>jeans</li>
+                    <li>vestidos de fiesta y vestidos elegantes</li>
+                    <li>camperas comunes, de abrigo y rompeviento</li>
+                    <li>ropa interior y medias</li>
+                    <li>bodys</li>
+                    <li>mallas</li>
+                    <li>accesorios</li>
+                    <li>camisas</li>
+                    <li>ropa deportiva</li>
+                    <li>baberos para bebe</li>
+                    <li>vestidos de casamiento</li>
+                </ul>
+            </div>
+        </section>
+        <section id="Donde Encontrarnos">
+            <h2>Donde Encontranos Y Medios de pago</h2>
+            <p> Encuentre su tienda mas cercana haciendo click en este mapa, aceptamos todas las tarjetas y mercado de pago.</p>
+            <p>Proximamente tienda online</p>
+    <!--aqui hay que agregar un mapa de google con varias ubicaciones pero no se hacerlo-->
+        </section>
+    </main>
+</body>
+</html>
