@@ -7,7 +7,7 @@
     <meta name="author" content= "Luca Pinotti">
     <meta name="description" content= "Pagina web sobre tienda de ropa">
     <title>Indumentaria Luca</title>
-    <link rel="stylesheet" href="./CSS/estilos.css"> 
+    <link rel="stylesheet" href="./CSS/estilos.css">
 </head>
 <body>
     <header>
@@ -83,7 +83,7 @@
                 </ul>
             </div>
         </section>
-        <section id="encontrarnos">
+        <section id="encontrarnos"> 
             <h2>Donde Encontranos Y Medios de pago</h2>
             <p> Encuentre su tienda mas cercana haciendo click en este mapa, aceptamos todas las tarjetas y mercado de pago.</p>
             <p>Proximamente tienda online</p>
