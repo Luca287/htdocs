@@ -10,7 +10,7 @@
 <body>
     <header>
     <div class="conteirner">
-    <p class="logo">Indumentaria Luca</p>
+    <h1 class="logo">Indumentaria Luca</h1>
     <nav>
         <ul>
             <li>
@@ -28,7 +28,7 @@
     </header>
     <main>
         <section id="nuestro-negocio">
-            <h1>Conoce la mejor tienda de ropa del pais</h1>
+            <h2>Conoce la mejor tienda de ropa del pais</h2>
             <p>Somos un negocio familiar donde encontrara indumentaria para toda la familia</p>
         </section>
 

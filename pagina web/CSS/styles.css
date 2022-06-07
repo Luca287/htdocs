@@ -1,13 +1,25 @@
-body{
-    
+header .contairner{
+    display: flex;
+   
 }
 
+
+header li {
+    display: inline-block;
+}
+header a {
+    color: red;
+    text-decoration: none;
+    padding: 20px;
+}
+
+header {
+    background-color: rgb(222, 222, 236);
+}
+
+
 #nuestro-negocio{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;left: 20px;
-   flex-direction: column;
+
      
     color: red;
     height: 800px;
@@ -15,3 +27,10 @@ body{
     background-repeat: no-repeat;
     background-image:url("../imagenes/inicio.jpg")
 }
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+flex-direction: column;
