@@ -28,13 +28,17 @@
     </header>
     <main>
         <section id="nuestro-negocio">
-        <h1>Conoce la mejor tienda de ropa del pais</h1>
-        <p>Somos un negocio familiar donde encontrara indumentaria para toda la familia</p>
+            <h1>Conoce la mejor tienda de ropa del pais</h1>
+            <p>Somos un negocio familiar donde encontrara indumentaria para toda la familia</p>
         </section>
+
         <section id="que-ofrecemos">
-            <h2>Que Ofrecemos</h2> 
-            <p>Ropa elegante o casual, para mujer u hombre, bebe o adulto, tenemos todo en nuestra tienda</p>           
+            <div class="conteirner">
+                <h2>Que Ofrecemos</h2> 
+                <p>Ropa elegante o casual, para mujer u hombre, bebe o adulto, tenemos todo en nuestra tienda</p>
+            </div>
         </section>
+        
         <section id="encontrarnos">
             <h2>Donde Encontrarnos Y Medios de pago</h2>
             <p> Encuentre su tienda más cercana haciendo click en este mapa, aceptamos todas las tarjetas y mercado de pago. </p>
