@@ -12,7 +12,10 @@
 </head>
 <body>
     <header>
-        <h1 class="logo">Indumentaria Luca</h1>
+        <a href=>
+            <img class="logo" src="imagenes/favicon.ico" alt="logo">
+        </a>
+        <h1>Indumentaria Luca</h1>
         <nav>
             <ul>
                 <li>
