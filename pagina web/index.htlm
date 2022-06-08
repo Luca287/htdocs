@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <a href=>
+        <a href="./index.htlm">
             <img class="logo" src="imagenes/favicon.ico" alt="logo">
         </a>
         <h1>Indumentaria Luca</h1>
@@ -28,8 +28,7 @@
                      <a href="#encontrarnos">Donde Encontrarnos Y Medios De Pago</a>
                  </li>
             </ul>
-        </nav>
-    
+        </nav>  
     </header>
     <main>
         <section id="nuestro-negocio">
