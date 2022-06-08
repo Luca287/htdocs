@@ -27,6 +27,11 @@ header h1{
     color: red;
 }
 
+.logo{
+    width: 3em;
+    height: 3em;
+}
+
 footer{
     background-color: rgb(212, 127, 84);
     text-align: center;
