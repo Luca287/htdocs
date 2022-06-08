@@ -32,6 +32,10 @@ header h1{
     height: 3em;
 }
 
+#nuestro-negocio{
+    color: red;
+}
+
 footer{
     background-color: rgb(212, 127, 84);
     text-align: center;
