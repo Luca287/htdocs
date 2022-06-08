@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content= "Luca Pinotti">
+    <meta name="description" content= "Pagina web sobre tienda de ropa finalizada">
     <title>Indumentaria Luca</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body>
     <header>
-    <div class="conteirner">
-    <h1 class="logo">Indumentaria Luca</h1>
-    <nav>
-        <ul>
-            <li>
-            <a href="#nuestro-negocio">Nuestro Negocio</a>
-            </li>
-            <li>
-            <a href="#que-ofrecemos">Que Ofrecemos</a>
-            </li>
-            <li>
-             <a href="#encontrarnos">Donde Encontrarnos Y Medios De Pago</a>
-            </li>
-        </ul>
-    </nav>
-    </div>
+        <h1 class="logo">Indumentaria Luca</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#nuestro-negocio">Nuestro Negocio</a>
+                </li>
+                <li>
+                     <a href="#que-ofrecemos">Que Ofrecemos</a>
+                 </li>
+                 <li>
+                     <a href="#encontrarnos">Donde Encontrarnos Y Medios De Pago</a>
+                 </li>
+            </ul>
+        </nav>
+    
     </header>
     <main>
         <section id="nuestro-negocio">
@@ -44,5 +46,9 @@
             <p> Encuentre su tienda más cercana haciendo click en este mapa, aceptamos todas las tarjetas y mercado de pago. </p>
         </section>
     </main>
+    <footer>
+        <p>Luca Pinotti</p> 
+
+    </footer>
 </body>
 </html>
