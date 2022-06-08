@@ -1,0 +1,28 @@
+#section3 {
+    padding: 20px;
+    background-color: rgba(15, 15, 15, 0.5);
+
+    /* Flexbox */
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+.card2 {
+    background-color: rgb(103 166 185);
+    border: 1px solid black;
+    flex-basis: 50%;
+
+    /* Flexbox */
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.card2 > div {
+    padding: 20px;
+    flex-basis: 60%;
+}
+
+.card2 > img {
+    max-width: 40%;
+}

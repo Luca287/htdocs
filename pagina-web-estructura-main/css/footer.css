@@ -1,0 +1,16 @@
+footer {
+    background-color: rgb(43, 40, 40);
+    color: white;
+    padding: 20px;
+
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* text-align: center; */
+}
+
+footer span {
+    margin-right: 10px;
+}

@@ -1,0 +1,43 @@
+#section4 {
+    /* Imagen de Fondo */
+    background-image: url('./../img/imagen2.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+
+    /* Flexbox */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#section4 div {
+    flex-basis: 50%;
+}
+
+#section4 ul {
+    list-style-type: none;
+}
+
+#map-container {
+    /* Flexbox */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#title-container {
+    font-size: 3em;
+
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map-container li {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}

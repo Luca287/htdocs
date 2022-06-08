@@ -1,0 +1,32 @@
+main {
+    /* GRID Layout */
+    display: grid;
+    grid-template-areas: 
+        'section1 section1 section1 section1'
+        'section2 section2 section3 section3'
+        'section4 section4 section4 section4';
+}
+
+#section1 {
+    /* Grid */
+    grid-area: section1;
+    min-height: 100vh;
+}
+
+#section2 {
+    /* Grid */
+    grid-area: section2;
+    min-height: 100vh;
+}
+
+#section3 {
+    /* Grid */
+    grid-area: section3;
+    min-height: 100vh;
+}
+
+#section4 {
+    /* Grid */
+    grid-area: section4;
+    min-height: 100vh;
+}

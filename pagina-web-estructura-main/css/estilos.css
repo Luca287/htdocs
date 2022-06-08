@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&family=Ubuntu:wght@300&display=swap');
+
+html {
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(218 225 234);
+}
+
+body {
+    /* Imagen de Fondo */
+    background-image: url('./../img/imagen2.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    min-height: 100vh;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+span.separator {
+    padding-left: 15px;
+    padding-right: 15px;
+}

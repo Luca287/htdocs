@@ -1,0 +1,26 @@
+#section1 {
+    /* Imagen de Fondo */
+    background-image: url('./../img/imagen1.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+    /* Position */
+    position: relative;
+}
+
+#section1 > h1 {
+    font-size: 4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+#section1 > div {
+    padding-right: 30px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+} 

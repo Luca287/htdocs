@@ -1,0 +1,37 @@
+#section2 {
+    text-align: center;
+    background-color: rgba(15, 15, 15, 0.5);
+
+    /* Flexbox */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-container {
+    padding: 0px 20px 20px 20px;
+
+    /* Flexbox */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.card {
+    background-color: rgb(103, 166, 185);
+    border: 1px solid black;
+    flex-basis: calc(50% - 12px);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card div {
+    padding: 20px;
+}
