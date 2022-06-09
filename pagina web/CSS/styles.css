@@ -44,10 +44,34 @@ header h1{
     color: red;
 }
 #nuestro-negocio p{
-color: red;
-position: absolute;
-bottom: -7%;
+    color: red;
+    position: absolute;
+    bottom: -7%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
     background-color: rgb(212, 127, 84);
