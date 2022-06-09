@@ -40,8 +40,13 @@ header h1{
     background-position: center;
     background-image: url(../imagenes/inicio.jpg)
 }
-#nuestro-negocio h1 p{
+#nuestro-negocio h2{
     color: red;
+}
+#nuestro-negocio p{
+color: red;
+position: absolute;
+bottom: -7%;
 }
 
 footer{
