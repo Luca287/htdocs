@@ -41,23 +41,43 @@
             <p>Ropa elegante o casual, para mujer u hombre, bebe o adulto, tenemos todo en nuestra tienda</p>
             <div class="conteirner">
                 <ul class="slider">
-                    <li>
+                    <li id="slide1">
                         <img src="./imagenes/que ofrecemos imagen 1.jpg" alt="">
                     </li>
-                    <li>
+                    <li id="slide2">
                         <img src="./imagenes/que ofrecemos imagen 2.jpg" alt="">
                     </li>
-                    <li>
+                    <li id="slide3">
                         <img src="./imagenes/que ofrecemos imagen 3.jpg" alt="">
                     </li>
-                    <li>
+                    <li id="slide4">
                         <img src="./imagenes/que ofrecemos imagen 4.jpg" alt="">
                     </li>
-                    <li>
+                    <li id="slide5">
                         <img src="./imagenes/que ofrecemos imagen 5.avif" alt="">
                     </li>
-                    <li>
+                    <li id="slide6">
                         <img src="./imagenes/que ofrecemos imagen 6.jpg" alt="">
+                    </li>
+                </ul>
+                <ul class="menu">
+                    <li>
+                        <a href="#slide1"></a>1
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+
                     </li>
                 </ul>
             </div>
