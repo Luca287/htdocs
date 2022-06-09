@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
 html {
     background-color: rgb(230, 235, 240);
 }
@@ -20,11 +22,11 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: red;
+    color: #002bff;
     padding: 30px
 }
 header h1{
-    color: red;
+    color: #002bff;
 }
 
 .logo{
@@ -41,11 +43,11 @@ header h1{
     background-image: url(../imagenes/inicio.jpg)
 }
 #nuestro-negocio h2{
-    color: red;
+    color: #002bff;
 }
 
 #nuestro-negocio p{
-    color: red;
+    color: #002bff;
     position: absolute;
     bottom: -3%;
 }
@@ -92,19 +94,21 @@ header h1{
     font-size: 20px;
   }
 
-
-
-
-#encontrarnos¨{
-    
+#encontrarnos{
+    background-color: rgb(212, 127, 84);
 }
 
+
+
+
 footer{
-    background-color: rgb(212, 127, 84);
+    background-color: rgb(126, 117, 112);
     text-align: center;
     padding: 5px;
 }
-
+footer p{
+    color: rgb(140, 0, 255);
+}
 
 
    
