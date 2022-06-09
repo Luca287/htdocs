@@ -56,7 +56,7 @@
   
   .menu li a{
     display: inline-block;
-    color: white;
+    color: rgb(226, 14, 14);
     text-decoration: none;
     background-color: grey;
     padding: 10px;
