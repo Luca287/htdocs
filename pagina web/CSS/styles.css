@@ -53,8 +53,7 @@ header h1{
     font-size: 20px;
     color: #002bff;
     position: absolute;
-    bottom: -7%;
-    
+    bottom: -7%;  
 }
 
 #que-ofrecemos{
@@ -108,8 +107,7 @@ header h1{
 
 #encontrarnos{
     background-color: rgb(212, 127, 84);
-    display:flexbox
-    justify-content: space-between;
+    
 }
 
 
