@@ -12,15 +12,13 @@
   
         <ul class="slider">
           <li id="slide1">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3947459/car.jpg"/>
+            <img src="./imagenes/que ofrecemos imagen 1.jpg"/>
           </li>
           <li id="slide2">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3947459/sunset.jpg"/>
+            <img src="./imagenes/que ofrecemos imagen 2.jpg"/>
           </li>
           <li id="slide3">
-            <h1>Ejemplo con otros elementos</h1>
-            <p>Esto es un párrafo de ejemplo para comprobar que podemos meter cualquier tipo de elementos en el slider</p>
-            <a href="https://kikopalomares.com/">¡Corre a mi web para más contenido!</a>
+            <img src="./imagenes/que ofrecemos imagen 3.jpg" alt="">
           </li>
         </ul>
         
