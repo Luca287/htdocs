@@ -33,10 +33,15 @@ header h1{
 }
 
 #nuestro-negocio{
-    color: red;
+    height: 700px;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     background-image: url(../imagenes/inicio.jpg)
-    
+}
+#nuestro-negocio h1 p{
+    color: red;
 }
 
 footer{
