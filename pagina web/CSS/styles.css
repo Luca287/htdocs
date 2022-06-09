@@ -46,11 +46,11 @@ header h1{
 #nuestro-negocio p{
     color: red;
     position: absolute;
-    bottom: -7%;
+    bottom: -3%;
 }
 
 #que-ofrecemos{
-    
+    height: 5000px;
 }
 
 footer{
