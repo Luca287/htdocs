@@ -43,6 +43,7 @@ header h1{
 #nuestro-negocio h2{
     color: red;
 }
+
 #nuestro-negocio p{
     color: red;
     position: absolute;
@@ -52,6 +53,8 @@ header h1{
 #que-ofrecemos{
     height: 5000px;
 }
+
+
 
 footer{
     background-color: rgb(212, 127, 84);
