@@ -2,6 +2,7 @@
 
 html {
     background-color: rgb(230, 235, 240);
+    
 }
 
 body{
@@ -27,6 +28,7 @@ nav a {
 }
 header h1{
     color: #002bff;
+    font-size: 40px;
 }
 
 .logo{
@@ -44,19 +46,29 @@ header h1{
 }
 #nuestro-negocio h2{
     color: #002bff;
+    font-size: 30px;
 }
 
 #nuestro-negocio p{
+    font-size: 20px;
     color: #002bff;
     position: absolute;
-    bottom: -3%;
+    bottom: -7%;
+    
 }
 
 #que-ofrecemos{
     height: 5000px;
 }
+#que-ofrecemos h2{
+    color: #002bff;
+    font-size: 30px
+}
 
-
+#que-ofrecemos p{
+    font-size: 20px;
+    color: #002bff;
+}
 
 
 
@@ -96,6 +108,8 @@ header h1{
 
 #encontrarnos{
     background-color: rgb(212, 127, 84);
+    display:flexbox
+    justify-content: space-between;
 }
 
 
