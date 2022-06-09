@@ -37,9 +37,10 @@
         </section>
 
         <section id="que-ofrecemos">
+            <h2>Que Ofrecemos</h2> 
+            <p>Ropa elegante o casual, para mujer u hombre, bebe o adulto, tenemos todo en nuestra tienda</p>
             <div class="conteirner">
-                <h2>Que Ofrecemos</h2> 
-                <p>Ropa elegante o casual, para mujer u hombre, bebe o adulto, tenemos todo en nuestra tienda</p>
+                
             </div>
         </section>
         
