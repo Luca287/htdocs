@@ -1,3 +1,14 @@
-body{
-    color: rgb(155, 0, 0)
+header{ 
+    background-color: brown;
+}
+nav ul{
+
+}
+nav ul li{ display: inline-block;
+margin-left: 30px;
+
+}
+
+div{
+    background-color: aqua;
 }

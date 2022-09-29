@@ -8,7 +8,7 @@
         <meta name="description" content= "Pagina web sobre tienda de ropa">
         <title>Indumentaria Luca</title>
         <link rel="icon" type="image/x-icon" href="/Imagenes/icono.png">
-        <link rel="stylesheet" href="/CSS/styles.css">
+        <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
     </head>
     <body>
         <header>
@@ -16,26 +16,26 @@
             <nav>
                 <ul>
                     <li>
-
+                        <p>parte primera</p>
                     </li>
                     <li>
-
+                        <p>parte segunda</p>
                     </li>
                     <li>
-                        
+                        <p>parte tercera</p>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
             <div>
-
+                <p>div1</p>
             </div>
             <div>
-
+                	<p>div2</p>
             </div>
             <div>
-
+                <p>div3</p>
             </div>
         </main>
         <footer>
