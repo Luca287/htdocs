@@ -9,7 +9,6 @@
         <title>Indumentaria Luca</title>
         <link rel="icon" type="image/x-icon" href="/Imagenes/icono.png">
         <link rel="stylesheet" href="/CSS/styles.css">
-        <script src=""></script>
     </head>
     <body>
         <header>
@@ -39,9 +38,9 @@
 
             </div>
         </main>
-    
-    
+        <footer>
 
+        </footer>
     </body>
 </html>
 
