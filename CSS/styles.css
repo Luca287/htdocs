@@ -3,13 +3,19 @@ body{
 }
 
 header{ 
-    background-color: brown;
+    background-color: rgb(212, 127, 84);
+    display: flex;
+
 }
 
-
+nav li{
+    display: inline-flex;
+    padding-left: 30px; 
+}
 
 div{
     background-color: rgb(116, 179, 179);
     text-align: center;
+    
 }
 
