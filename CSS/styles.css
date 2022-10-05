@@ -1,14 +1,15 @@
+body{
+    margin: 0px;
+}
+
 header{ 
     background-color: brown;
 }
-nav ul{
 
-}
-nav ul li{ display: inline-block;
-margin-left: 30px;
 
-}
 
 div{
-    background-color: aqua;
+    background-color: rgb(116, 179, 179);
+    text-align: center;
 }
+
