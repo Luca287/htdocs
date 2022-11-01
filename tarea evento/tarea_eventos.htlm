@@ -102,14 +102,14 @@
         var BotonAbrir = document.querySelector (".open-modal");
         BotonAbrir.addEventListener ("click", function (event) {
          
-            PopUp.style.display = 'block';
+            PopUp.style.display = "block";
         });
         
 
         var BotonCerrar = document.querySelector (".close-modal");
         BotonCerrar.addEventListener ("click", function (event) {
             
-            PopUp.style.display = 'none';
+            PopUp.style.display = "none";
         });
 
     </script>
