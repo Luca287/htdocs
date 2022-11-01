@@ -96,10 +96,12 @@
     </div>
 
     <script>
+        var PopUp = document.querySelector (".modal")
+        
         var BotonAbrir = document.querySelector (".open-modal");
         BotonAbrir.addEventListener ("click", function (event) {
          
-        "modal".style.z-index = 1;
+       PopUp.style.display = 'block';
         });
         
 
