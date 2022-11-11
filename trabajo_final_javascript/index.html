@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <div id="productos">
+        <div>
             <ul>
                 <li>Producto 1</li>
                 <li>Producto 2</li>
@@ -29,7 +29,7 @@
 
 <script>
     var peticion = new XMLHttpRequest();
-    peticion.open("GET", "http://127.0.0.1:80/productos.json",true);
+    peticion.open("GET", "http://127.0.0.1/productos.json",true);
     peticion.addEventListener("readystatechange", function () {
     if (this.readyState == 4 && this.status == 200) {
         var productos = JSON.parse(this.responseText);
