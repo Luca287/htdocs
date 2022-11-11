@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>XMLHttpRequest</h1>
+
+    <script>
+        var peticion = new XMLHttpRequest();
+
+
+        peticion.addEventListener("readystatechange", function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var urlFotoGatito = JSON.parse(this.responseText)[0].url;
+                var img = document.createElement('img');
+                img.setAttribute("src", urlFotoGatito);
+                document.body.appendChild(img);
+                console.log("Foto Gatito");
+            }
+        });
+
+
+        peticion.open("GET", "https://api.thecatapi.com/v1/images/search?size=full", true);
+        peticion.send();
+        console.log("Hola Mundo!");
+    </script>
+</body>
+
+</html>
