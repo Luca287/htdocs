@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content= "Luca Pinotti">
     <meta name="description" content= "carrito de compras">
-    <title>carrito de compras</title>
-    
+    <title>carrito de compras</title> 
 </head>
 <body>
     <main>
@@ -27,13 +26,34 @@
 
         </div>
     </main>
+
 <script>
-     var lista = document.querySelector("ul","li");
-    console.log (lista)
+     var peticion = new XMLHttpRequest();
+     peticion.open("GET", "http://127.0.0.1/trabajo%20final%20javascript/productos.json", true);
+     peticion.send();
+       
+     
+     
+     
+     
+     
+     
+        
+     
+     
+     
+     
+     
+        //https://api.thecatapi.com/v1/images/search?size=full
+     
+     
+     //var lista = document.querySelector("ul","li");
+    //lista.style.backgroundColor = "red";
 
-    var perro = 1
-</script>
+//JSON.parse(this.responseText)[0].url;
    
-</body>
 
+
+</script>
+</body>
 </html>
