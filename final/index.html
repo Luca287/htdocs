@@ -28,15 +28,29 @@
     </main>
 
 <script>
-    var peticion = new XMLHttpRequest();
-    peticion.open("GET", "http://127.0.0.1/productos.json",true);
-    peticion.addEventListener("readystatechange", function () {
-    if (this.readyState == 4 && this.status == 200) {
-        var productos = JSON.parse(this.responseText);
-     } 
- });
-    
+   var peticion = new XMLHttpRequest();
+
+    peticion.open("GET", "http://127.0.0.1:80/final/peticiones/productos.json",true);
+    peticion.send();
+    if (peticion.readyState == 4 && (peticion.status == 200)) {
+        var productos = JSON.parse (peticion)
+        console.log ("listo")
+    } 
+    else{
+    console.log ("no logrado")
+    };
+
+
+
+
+
+
+
+
+
+
 
 </script>
 </body>
 </html>
+"http://127.0.0.1:80/trabajo_final_javascript/peticiones/productos.json"
