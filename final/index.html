@@ -9,21 +9,11 @@
     <title>carrito de compras</title> 
 </head>
 <body>
-
-<script>
-   var peticion = new XMLHttpRequest();
-
-    peticion.open("GET", "http://127.0.0.1:80/final/peticiones/productos.json",true);
-    peticion.send();
-    if (peticion.readyState == 4 && (peticion.status == 200)) {
-        var productos = JSON.parse (peticion)
-        console.log ("listo")
-    } 
-    else{
-    console.log ("no logrado")
-    };
+<script src="/script.js"></script>
 
 
-</script>
 </body>
 </html>
+
+
+
