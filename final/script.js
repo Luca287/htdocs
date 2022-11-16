@@ -1,5 +1,6 @@
 var peticion = new XMLHttpRequest();
 var total = 0
+var contador = 0
 peticion.open("GET", "./productos.json", true);
 
 peticion.addEventListener("readystatechange", function () {
