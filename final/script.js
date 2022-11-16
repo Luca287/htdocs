@@ -1,4 +1,5 @@
 var peticion = new XMLHttpRequest();
+var total = 0
 peticion.open("GET", "./productos.json", true);
 
 peticion.addEventListener("readystatechange", function () {
@@ -6,22 +7,11 @@ peticion.addEventListener("readystatechange", function () {
         var productos = JSON.parse(this.responseText);
         console.log(productos);
         
+
+        
     }
 
-    productos.forEach(p => {
-        var link = document.createElement('a');
-        link.setAttribute('href', '#');
-        link.innerText = p.nombre;
-    })
-
-        // Crear fila
-        var fila = document.createElement('tr');
-        var tdNombre = document.createElement('td');
-        tdNombre.innerText = p.nombre;
-        var tdPrecio = document.createElement('td');
-        tdPrecio.innerText = p.precio;
-        fila.appendChild(tdNombre);
-        fila.appendChild(tdPrecio);
+    
 
 
 });
