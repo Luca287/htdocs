@@ -20,7 +20,7 @@ peticion.addEventListener("readystatechange", function () {
 
         var imagen = document.createElement ('img');
         imagen.setAttribute ('alt', "imagen del producto");
-        imagen.setAttribute ('src', p.url_foto);  
+        imagen.setAttribute ('src', productos.url_foto);  
 
         div.appendChild (imagen);
             
