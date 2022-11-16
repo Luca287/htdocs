@@ -8,7 +8,9 @@ peticion.addEventListener("readystatechange", function () {
         var productos = JSON.parse(this.responseText);
         console.log(productos);
         
-
+        productos.forEach(element => {
+            var link = document.createElement ('a');
+        });
         
     }
 
