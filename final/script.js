@@ -7,10 +7,10 @@ peticion.addEventListener("readystatechange", function () {
     if (this.readyState == 4 && this.status == 200) {
         var productos = JSON.parse(this.responseText);
 
-        productos.forEach(element => {
+        productos.forEach(productos => {
             var folletos = document.getElementById("productos")
             var div = document.createElement("div");
-            div.appendChild(folletos)
+            folletos.appendChild(div)
 
             var link = document.createElement('a');
             link.setAttribute('href', '#');
@@ -25,9 +25,14 @@ peticion.addEventListener("readystatechange", function () {
             div.appendChild(imagen);
 
             var descripcion = document.createElement("p");
-            descripcion.innerText = (productos.descripcion);
+            descripcion.innerText = productos.descripcion;
 
             div.appendChild(descripcion)
+
+            var precio = document.createElement ("p");
+            precio.innerText = productos.precio;
+
+            div.appendChild(precio);
 
         });
     }
