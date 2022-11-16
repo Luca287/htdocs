@@ -7,17 +7,43 @@ peticion.addEventListener("readystatechange", function () {
     if (this.readyState == 4 && this.status == 200) {
         var productos = JSON.parse(this.responseText);
         console.log(productos);
+        console.log(productos.nombre)
         
+       
         productos.forEach(element => {
-            var link = document.createElement ('a');
+        var link = document.createElement ('a');
+            link.setAttribute('href', '#');
+            link.innerText = productos.nombre;
         });
+
+
+        
+        var fila = document.createElement('tr');
+        var tdNombre = document.createElement('td');
+        tdNombre.innerText = productos.nombre;
+        var tdPrecio = document.createElement('td');
+        tdPrecio.innerText = productos.precio;
+        fila.appendChild(tdNombre);
+        fila.appendChild(tdPrecio);
+
+
+
+
         
     }
-
+});
+peticion.send();
     
 
 
-});
-peticion.send();
 
-//document.querySelector ("#productos").innerHTML = this.responseText;
+ // for (let index = 0; index < productos.length; index++) {
+ //       var link = productos [index];
+  //      var link = document.createElement ('a');
+  //          link.setAttribute('href', '#');
+  //          link.innerText = productos.nombre;
+   //    }
+
+//var prueba = document.createElement ("a");
+//prueba.setAttribute ("href","@");
+//prueba.innerText = contador
