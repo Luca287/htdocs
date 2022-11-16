@@ -18,6 +18,13 @@ peticion.addEventListener("readystatechange", function () {
 
          div.appendChild (link);
 
+        var imagen = document.createElement ('img');
+        imagen.setAttribute ('alt', "imagen del producto");
+        imagen.setAttribute ('src', p.url_foto);  
+
+        div.appendChild (imagen);
+            
+
             });
 
         
