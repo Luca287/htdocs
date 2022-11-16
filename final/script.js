@@ -9,7 +9,7 @@ peticion.addEventListener("readystatechange", function () {
         
        productos.forEach(element => {
          var folletos = document.getElementById("productos")
-         var div= document.createElement ("div");
+         var div = document.createElement ("div");
          div.appendChild (folletos)
 
          var link = document.createElement('a');
@@ -24,6 +24,10 @@ peticion.addEventListener("readystatechange", function () {
 
         div.appendChild (imagen);
             
+        var descripcion = document.createElement ("p");
+        descripcion.innerText = (productos.descripcion);
+
+        div.appendChild (descripcion)
 
             });
 
