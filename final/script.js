@@ -12,12 +12,11 @@ peticion.addEventListener("readystatechange", function () {
          var div= document.createElement ("div");
          div.appendChild (folletos)
 
-
          var link = document.createElement('a');
          link.setAttribute('href', '#');
          link.innerText = productos.nombre;
 
-
+         div.appendChild (link);
 
             });
 
