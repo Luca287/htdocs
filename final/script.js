@@ -30,14 +30,6 @@ peticion.addEventListener("readystatechange", function () {
             div.appendChild(descripcion)
 
         });
-
-
-
-
-
-
-
-
     }
 });
 peticion.send();
