@@ -9,7 +9,7 @@ peticion.addEventListener("readystatechange", function () {
         console.log(productos);
         console.log(productos.nombre)
         
-       
+        
         productos.forEach(element => {
         var link = document.createElement ('a');
             link.setAttribute('href', '#');
@@ -18,13 +18,13 @@ peticion.addEventListener("readystatechange", function () {
 
 
         
-        var fila = document.createElement('tr');
-        var tdNombre = document.createElement('td');
-        tdNombre.innerText = productos.nombre;
-        var tdPrecio = document.createElement('td');
-        tdPrecio.innerText = productos.precio;
-        fila.appendChild(tdNombre);
-        fila.appendChild(tdPrecio);
+       // var fila = document.createElement('tr');
+       // var tdNombre = document.createElement('td');
+       // tdNombre.innerText = productos.nombre;
+       // var tdPrecio = document.createElement('td');
+        //tdPrecio.innerText = productos.precio;
+       // fila.appendChild(tdNombre);
+       // fila.appendChild(tdPrecio);
 
 
 
@@ -33,7 +33,7 @@ peticion.addEventListener("readystatechange", function () {
     }
 });
 peticion.send();
-    
+document.querySelector('.productos').appendChild(link);   
 
 
 
