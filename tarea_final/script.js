@@ -14,9 +14,13 @@ peticion.addEventListener("readystatechange", function () {
             var div = document.createElement("div");
             folletos.appendChild(div);
 
-            var link = document.createElement('a');
-            link.setAttribute('href', '#');
-            link.innerText = productos.nombre;
+
+            var vnombre = document.createElement("p");
+            vnombre.innerText = productos.nombre
+            div.appendChild(vnombre)
+
+
+
 
             div.appendChild(link);
 
@@ -35,6 +39,16 @@ peticion.addEventListener("readystatechange", function () {
             precio.innerText = productos.precio;
 
             div.appendChild(precio);
+
+
+
+            var link = document.createElement('a');
+            link.setAttribute('href', '#');
+            link.text = ("Agregar al carrito")
+
+
+
+
 
             //crear fila de la tabla
             link.addEventListener("click", function (event) {
