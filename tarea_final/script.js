@@ -2,7 +2,7 @@ var peticion = new XMLHttpRequest();
 var total = 0
 var contador = 0
 peticion.open("GET", "./productos.json", true);
-//peticion de los productos y creacion de div
+//peticion de los productos y creacion de los div
 peticion.addEventListener("readystatechange", function () {
     if (this.readyState == 4 && this.status == 200) {
         var productos = JSON.parse(peticion.responseText);
@@ -35,7 +35,7 @@ peticion.addEventListener("readystatechange", function () {
 
             div.appendChild(precio);
 
-// creacion de la tabla
+        // tabla de productos
             var fila = document.createElement("tr");
             var celdanombre = document.createElement("td");
             celdanombre = productos.nombre;
@@ -46,7 +46,11 @@ peticion.addEventListener("readystatechange", function () {
             var celdaborrar = document.createElement("td"); 
             var borrar = document.createElement ("a");
             borrar.setAttribute("href","#");
-            borrar.innerText ("X")
+            borrar.innerText ("X");
+            celdaborrar.appendChild(borrar);
+            fila.appendChild(celdaborrar);
+
+         // funcionalidad de la tabla
 
 
 
