@@ -53,11 +53,14 @@ peticion.addEventListener("readystatechange", function () {
             celdaborrar.appendChild(borrar);
             fila.appendChild(celdaborrar);
 
-            // funcionalidad para agregar a la tabla
+            // funcionalidad para agregar a la tabla, el total y el numero de productos
             link.addEventListener("click",function (event) {
             total = total + productos.precio;
-            var Ptotal = document.getElementById("total");
-            Ptotal.innerText = total;
+            var ptotal = document.getElementById("total");
+            ptotal.innerText = total;
+
+            contador = contador + 1
+
 
             });
 
