@@ -53,16 +53,17 @@ peticion.addEventListener("readystatechange", function () {
             celdaborrar.appendChild(borrar);
             fila.appendChild(celdaborrar);
 
-            // funcionalidad para agregar a la tabla, el total y el numero de productos
-            link.addEventListener("click",function (event) {
-            total = total + productos.precio;
-            var ptotal = document.getElementById("total");
-            ptotal.innerText = total;
-
-            contador = contador + 1
-
-
+            // funcionalidad del total y el numero de productos
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                total = total + productos.precio;
+                var ptotal = document.getElementById("total");
+                ptotal.innerText = total;
+                contador = contador + 1
             });
+
+             // funcionalidad para agregar a la tabla
+
 
         });
 
