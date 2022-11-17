@@ -1,6 +1,7 @@
+//variables 
 var peticion = new XMLHttpRequest();
-var total = 0
-var contador = 0
+var total = 0;
+var contador = 0;
 peticion.open("GET", "./productos.json", true);
 //peticion de los productos y creacion de los div
 peticion.addEventListener("readystatechange", function () {
@@ -35,24 +36,30 @@ peticion.addEventListener("readystatechange", function () {
 
             div.appendChild(precio);
 
-        // tabla de productos
+            // tabla de productos
             var fila = document.createElement("tr");
             var celdanombre = document.createElement("td");
             celdanombre = productos.nombre;
             fila.appendChild(celdanombre);
+
             var celdaprecio = document.createElement("td");
             celdaprecio = productos.precio;
             fila.appendChild(celdaprecio);
-            var celdaborrar = document.createElement("td"); 
-            var borrar = document.createElement ("a");
-            borrar.setAttribute("href","#");
-            borrar.innerText ("X");
+
+            var celdaborrar = document.createElement("td");
+            var borrar = document.createElement("a");
+            borrar.setAttribute("href", "#");
+            borrar.innerText("X");
             celdaborrar.appendChild(borrar);
             fila.appendChild(celdaborrar);
 
-         // funcionalidad de la tabla
+            // funcionalidad para agregar a la tabla
+            link.addEventListener("click",function (event) {
+            total = total + productos.precio;
+            var Ptotal = document.getElementById("total");
+            Ptotal.innerText = total;
 
-
+            });
 
         });
 
