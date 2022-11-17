@@ -36,7 +36,7 @@ peticion.addEventListener("readystatechange", function () {
 
             div.appendChild(precio);
 
-            //tabla
+            //crear fila de la tabla
             link.addEventListener("click", function (event) {
                 event.preventDefault();
 
@@ -56,7 +56,7 @@ peticion.addEventListener("readystatechange", function () {
                 var pcontador = document.getElementById("cantidad")
                 contador = contador + 1
                 pcontador.innerText = contador
-                //borrar de la tabla
+                //borrar de la fila
                 var celdaborrar = document.createElement("td");
                 var borrar = document.createElement("a");
                 borrar.setAttribute("href", "#");
@@ -70,9 +70,12 @@ peticion.addEventListener("readystatechange", function () {
                     Total = total - productos.precio;
 
                 });
+
+                document.querySelector("tbody").appendChild(fila);
             });
+                
         });
-    }
+    };
 });
 peticion.send();
 
