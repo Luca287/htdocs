@@ -37,7 +37,6 @@ peticion.addEventListener("readystatechange", function () {
             div.appendChild(precio);
 
             //tabla
-
             link.addEventListener("click", function (event) {
                 event.preventDefault();
 
@@ -50,13 +49,6 @@ peticion.addEventListener("readystatechange", function () {
                 celdaprecio = productos.precio;
                 fila.appendChild(celdaprecio);
 
-                var celdaborrar = document.createElement("td");
-                var borrar = document.createElement("a");
-                borrar.setAttribute("href", "#");
-                borrar.innerText("X");
-                celdaborrar.appendChild(borrar);
-                fila.appendChild(celdaborrar);
-
                 var ptotal = document.getElementById("total");
                 total = total + productos.precio;
                 ptotal.innerText = total;
@@ -64,6 +56,20 @@ peticion.addEventListener("readystatechange", function () {
                 var pcontador = document.getElementById("cantidad")
                 contador = contador + 1
                 pcontador.innerText = contador
+                //borrar de la tabla
+                var celdaborrar = document.createElement("td");
+                var borrar = document.createElement("a");
+                borrar.setAttribute("href", "#");
+                borrar.innerText("X");
+                celdaborrar.appendChild(borrar);
+                fila.appendChild(celdaborrar);
+
+                borrar.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    console.log(event.target.parentElement.parentElement.remove());
+                    Total = total - productos.precio;
+
+                });
             });
         });
     }
