@@ -56,15 +56,16 @@ peticion.addEventListener("readystatechange", function () {
             // funcionalidad del total y el numero de productos
             link.addEventListener("click", function (event) {
                 event.preventDefault();
-                total = total + productos.precio;
                 var ptotal = document.getElementById("total");
+                total = total + productos.precio;
                 ptotal.innerText = total;
+
+                var pcontador = document.getElementById("cantidad")
                 contador = contador + 1
-                var pcontador = document.getElementById("total")
                 pcontador.innerText = contador
             });
 
-             // funcionalidad para agregar a la tabla
+            // funcionalidad para agregar a la tabla
 
 
         });
