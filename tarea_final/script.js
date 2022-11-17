@@ -82,5 +82,32 @@ peticion.addEventListener("readystatechange", function () {
     };
 });
 peticion.send();
+var precioMasAlto = -1;
+var BotonMasCaro = document.getElementById("Caro");
 
-var MasCaro = document.getElementById("Caro")
+BotonMasCaro.addEventListener("clik", function (event) {
+    var productosCarrito = document.querySelector('tbody').children;
+    
+    for (let index = 0; index < productosCarrito.length; index++) {
+        const productorow = productosCarrito[index];
+        
+        let productoNombre = productoRow.children[0].innerText;
+        let productoPrecio = Number(productoRow.children[1].innerText);
+        
+        if (productoPrecio>precioMasAlto) {
+
+            precioMasAlto = productoPrecio
+            
+        }
+        var preciomascaro = document.getElementById("preciomascaro")
+        preciomascaro.innerText = precioMasAlto
+
+    }
+    
+
+});
+
+
+
+
+
