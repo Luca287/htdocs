@@ -8,9 +8,9 @@ peticion.addEventListener("readystatechange", function () {
         var productos = JSON.parse(this.responseText);
 
         productos.forEach(productos => {
-            var folletos = document.getElementById("productos")
+            var folletos = document.getElementById("productos");
             var div = document.createElement("div");
-            folletos.appendChild(div)
+            folletos.appendChild(div);
 
             var link = document.createElement('a');
             link.setAttribute('href', '#');
@@ -27,14 +27,26 @@ peticion.addEventListener("readystatechange", function () {
             var descripcion = document.createElement("p");
             descripcion.innerText = productos.descripcion;
 
-            div.appendChild(descripcion)
+            div.appendChild(descripcion);
 
             var precio = document.createElement ("p");
             precio.innerText = productos.precio;
 
             div.appendChild(precio);
 
+
+            var fila = document.createElement ("tr");
+            var celdanombre = document.createElement ("td");
+            celdanombre = productos.nombre;
+            fila.appendChild(celdanombre);
+            var celdaprecio = document.createElement ("td");
+            celdaprecio = productos.precio;
+            fila.appendChild(celdaprecio);
+
         });
+
+            
+
     }
 });
 peticion.send();
