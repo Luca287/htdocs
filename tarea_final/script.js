@@ -53,3 +53,5 @@ peticion.addEventListener("readystatechange", function () {
     }
 });
 peticion.send();
+
+var MasCaro = document.getElementById("Caro")
