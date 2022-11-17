@@ -60,6 +60,8 @@ peticion.addEventListener("readystatechange", function () {
                 var ptotal = document.getElementById("total");
                 ptotal.innerText = total;
                 contador = contador + 1
+                var pcontador = document.getElementById("total")
+                pcontador.innerText = contador
             });
 
              // funcionalidad para agregar a la tabla
