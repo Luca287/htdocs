@@ -49,7 +49,7 @@ peticion.addEventListener("readystatechange", function () {
                 celdaprecio = productos.precio;
                 fila.appendChild(celdaprecio);
 
-                //total y contador
+                //agregar elemento sumar en total y contador
                 var ptotal = document.getElementById("total");
                 total = total + productos.precio;
                 ptotal.innerText = total;
@@ -66,10 +66,12 @@ peticion.addEventListener("readystatechange", function () {
                 celdaborrar.appendChild(borrar);
                 fila.appendChild(celdaborrar);
 
+                //borrar elemento restar en total y contador
                 borrar.addEventListener("click", function (event) {
                     event.preventDefault();
                     console.log(event.target.parentElement.parentElement.remove());
                     Total = total - productos.precio;
+                    contador = contador - 1
 
                 });
 
