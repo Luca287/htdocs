@@ -14,41 +14,27 @@ peticion.addEventListener("readystatechange", function () {
             var div = document.createElement("div");
             folletos.appendChild(div);
 
-
             var vnombre = document.createElement("p");
             vnombre.innerText = productos.nombre
             div.appendChild(vnombre)
 
-
-
-
-            div.appendChild(link);
-
             var imagen = document.createElement('img');
             imagen.setAttribute("alt", "imagen del producto");
             imagen.setAttribute("src", productos.url_foto);
-
             div.appendChild(imagen);
 
             var descripcion = document.createElement("p");
             descripcion.innerText = productos.descripcion;
-
             div.appendChild(descripcion);
 
             var precio = document.createElement("p");
             precio.innerText = productos.precio;
-
             div.appendChild(precio);
-
-
 
             var link = document.createElement('a');
             link.setAttribute('href', '#');
             link.text = ("Agregar al carrito")
-
-
-
-
+            div.appendChild(link);
 
             //crear fila de la tabla
             link.addEventListener("click", function (event) {
@@ -87,7 +73,7 @@ peticion.addEventListener("readystatechange", function () {
 
                 document.querySelector("tbody").appendChild(fila);
             });
-                
+
         });
     };
 });
