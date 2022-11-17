@@ -36,26 +36,27 @@ peticion.addEventListener("readystatechange", function () {
 
             div.appendChild(precio);
 
-            // tabla de productos
-            var fila = document.createElement("tr");
-            var celdanombre = document.createElement("td");
-            celdanombre = productos.nombre;
-            fila.appendChild(celdanombre);
+            //tabla
 
-            var celdaprecio = document.createElement("td");
-            celdaprecio = productos.precio;
-            fila.appendChild(celdaprecio);
-
-            var celdaborrar = document.createElement("td");
-            var borrar = document.createElement("a");
-            borrar.setAttribute("href", "#");
-            borrar.innerText("X");
-            celdaborrar.appendChild(borrar);
-            fila.appendChild(celdaborrar);
-
-            // funcionalidad del total y el numero de productos
             link.addEventListener("click", function (event) {
                 event.preventDefault();
+
+                var fila = document.createElement("tr");
+                var celdanombre = document.createElement("td");
+                celdanombre = productos.nombre;
+                fila.appendChild(celdanombre);
+
+                var celdaprecio = document.createElement("td");
+                celdaprecio = productos.precio;
+                fila.appendChild(celdaprecio);
+
+                var celdaborrar = document.createElement("td");
+                var borrar = document.createElement("a");
+                borrar.setAttribute("href", "#");
+                borrar.innerText("X");
+                celdaborrar.appendChild(borrar);
+                fila.appendChild(celdaborrar);
+
                 var ptotal = document.getElementById("total");
                 total = total + productos.precio;
                 ptotal.innerText = total;
@@ -64,16 +65,7 @@ peticion.addEventListener("readystatechange", function () {
                 contador = contador + 1
                 pcontador.innerText = contador
             });
-
-            // funcionalidad para agregar a la tabla
-
-
         });
-
-
-
-
-
     }
 });
 peticion.send();
