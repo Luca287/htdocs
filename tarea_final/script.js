@@ -75,7 +75,7 @@ peticion.addEventListener("readystatechange", function () {
                     Total = total - productos.precio;
                     contador = contador - 1
                     pcontador.innerText = contador
-                    pcontador.innerText = contador
+                    ptotal.innerText = total
 
                 });
 
