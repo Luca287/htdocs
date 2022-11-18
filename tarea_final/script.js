@@ -42,11 +42,11 @@ peticion.addEventListener("readystatechange", function () {
                 var fila = document.createElement("tr");
 
                 var celdanombre = document.createElement("td");
-                celdanombre = productos.nombre;
+                celdanombre.innerText = productos.nombre;
                 fila.appendChild(celdanombre);
 
                 var celdaprecio = document.createElement("td");
-                celdaprecio = productos.precio;
+                celdaprecio.innerText = productos.precio;
                 fila.appendChild(celdaprecio);
 
 
@@ -58,7 +58,7 @@ peticion.addEventListener("readystatechange", function () {
                 var celdaborrar = document.createElement("td");
                 var borrar = document.createElement("a");
                 borrar.setAttribute("href", "#");
-                borrar.innerText("X");
+                borrar.innerText = ("X");
                 celdaborrar.appendChild(borrar);
                 fila.appendChild(celdaborrar);
 
