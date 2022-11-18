@@ -95,12 +95,12 @@ BotonMasCaro.addEventListener("click", function (event) {
     event.preventDefault();
     modal.style.display = "block";
 
-    var productosCarrito = document.querySelector('tbody').children;
+    var productosCarrito = document.getElementById("carrito.tbody").children;
     for (let index = 0; index < productosCarrito.length; index++) {
         const productorow = productosCarrito[index];
 
-        let productoNombre = productoRow.children[0].innerText;
-        let productoPrecio = Number(productoRow.children[1].innerText);
+        let productoNombre = productosrow.children[0].innerText;
+        let productoPrecio = Number(productosrow.children[1].innerText);
 
         if (productoPrecio > precioMasAlto) {
 
