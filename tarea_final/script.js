@@ -39,6 +39,7 @@ peticion.addEventListener("readystatechange", function () {
             //crear fila de la tabla
             link.addEventListener("click", function (event) {
                 event.preventDefault();
+                
                 var fila = document.createElement("tr");
 
                 var celdanombre = document.createElement("td");
