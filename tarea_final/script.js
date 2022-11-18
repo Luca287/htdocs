@@ -110,8 +110,8 @@ BotonMasCaro.addEventListener("click", function (event) {
     };
     var preciomascaro = document.getElementById("preciomascaro");
     precioMasAlto.innerText = preciomascaro;
+});
 
-)};
 
 var cerrar = document.getElementById("cerrarcaro");
 cerrar.addEventListener("click", function (event) {
