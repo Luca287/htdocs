@@ -87,11 +87,15 @@ peticion.addEventListener("readystatechange", function () {
 });
 peticion.send();
 var precioMasAlto = -1;
+
+var modal = document.getElementById("modal");
+
 var BotonMasCaro = document.getElementById("Caro");
+BotonMasCaro.addEventListener("click", function (event) {
+    event.preventDefault();
+    modal.style.display = "block";
 
-BotonMasCaro.addEventListener("clik", function (event) {
     var productosCarrito = document.querySelector('tbody').children;
-
     for (let index = 0; index < productosCarrito.length; index++) {
         const productorow = productosCarrito[index];
 
@@ -102,14 +106,32 @@ BotonMasCaro.addEventListener("clik", function (event) {
 
             precioMasAlto = productoPrecio
 
-        }
-        var preciomascaro = document.getElementById("preciomascaro")
-        precioMasAlto.innerText = preciomascaro
+        };
+    };
+    var preciomascaro = document.getElementById("preciomascaro");
+    precioMasAlto.innerText = preciomascaro;
 
-    }
+)};
 
-
+var cerrar = document.getElementById("cerrarcaro");
+cerrar.addEventListener("click", function (event) {
+    event.preventDefault();
+    modal.style.display = "none"
 });
+
+
+
+
+
+
+    
+
+    
+      
+   
+
+
+
 
 
 
