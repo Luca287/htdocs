@@ -104,7 +104,7 @@ BotonMasCaro.addEventListener("clik", function (event) {
 
         }
         var preciomascaro = document.getElementById("preciomascaro")
-       precioMasAlto.innerText =  preciomascaro
+        precioMasAlto.innerText = preciomascaro
 
     }
 
