@@ -95,7 +95,7 @@ BotonMasCaro.addEventListener("click", function (event) {
     event.preventDefault();
     modal.style.display = "block";
 
-    var productosCarrito = document.getElementById("carrito.tbody").children;
+    var productosCarrito = document.querySelector("tbody").children;
     for (let index = 0; index < productosCarrito.length; index++) {
         const productorow = productosCarrito[index];
 
