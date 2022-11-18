@@ -50,14 +50,6 @@ peticion.addEventListener("readystatechange", function () {
                 celdaprecio.innerText = productos.precio;
                 fila.appendChild(celdaprecio);
 
-                //borrar de la fila
-                var celdaborrar = document.createElement("td");
-                var borrar = document.createElement("a");
-                borrar.setAttribute("href", "#");
-                borrar.innerText = ("X");
-                celdaborrar.appendChild(borrar);
-                fila.appendChild(celdaborrar);
-
                 //agregar elemento sumar en total y contador
                 var ptotal = document.getElementById("total");
                 total = total + productos.precio;
@@ -66,7 +58,14 @@ peticion.addEventListener("readystatechange", function () {
                 var pcontador = document.getElementById("cantidad")
                 contador = contador + 1
                 pcontador.innerText = contador
-
+                
+                //borrar de la fila
+                var celdaborrar = document.createElement("td");
+                var borrar = document.createElement("a");
+                borrar.setAttribute("href", "#");
+                borrar.innerText = ("X");
+                celdaborrar.appendChild(borrar);
+                fila.appendChild(celdaborrar);
 
                 //borrar elemento restar en total y contador
                 borrar.addEventListener("click", function (event) {
