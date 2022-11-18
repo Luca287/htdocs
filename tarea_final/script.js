@@ -41,33 +41,14 @@ peticion.addEventListener("readystatechange", function () {
                 event.preventDefault();
                 var fila = document.createElement("tr");
 
-               // var celdanombre = document.createElement("td");
-                //celdanombre = productos.nombre;
-                //fila.appendChild(celdanombre);
-            
-            
-            
-            
-            
-        
-            
-            
-            
-            
-            
-            
-            
-            
-          
-
-                
-                
-                
-                
+                var celdanombre = document.createElement("td");
+                celdanombre = productos.nombre;
+                fila.appendChild(celdanombre);
 
                 var celdaprecio = document.createElement("td");
                 celdaprecio = productos.precio;
                 fila.appendChild(celdaprecio);
+
 
                 var pcontador = document.getElementById("cantidad")
                 contador = contador + 1
@@ -107,23 +88,23 @@ var BotonMasCaro = document.getElementById("Caro");
 
 BotonMasCaro.addEventListener("clik", function (event) {
     var productosCarrito = document.querySelector('tbody').children;
-    
+
     for (let index = 0; index < productosCarrito.length; index++) {
         const productorow = productosCarrito[index];
-        
+
         let productoNombre = productoRow.children[0].innerText;
         let productoPrecio = Number(productoRow.children[1].innerText);
-        
-        if (productoPrecio>precioMasAlto) {
+
+        if (productoPrecio > precioMasAlto) {
 
             precioMasAlto = productoPrecio
-            
+
         }
         var preciomascaro = document.getElementById("preciomascaro")
         preciomascaro.innerText = precioMasAlto
 
     }
-    
+
 
 });
 
