@@ -72,7 +72,7 @@ peticion.addEventListener("readystatechange", function () {
                     event.preventDefault();
                     console.log(event.target.parentElement.parentElement.remove());
 
-                    Total = total - productos.precio;
+                    pTotal = total - productos.precio;
                     contador = contador - 1
                     pcontador.innerText = contador
                     ptotal.innerText = total
