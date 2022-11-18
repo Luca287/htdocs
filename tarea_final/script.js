@@ -71,8 +71,11 @@ peticion.addEventListener("readystatechange", function () {
                 borrar.addEventListener("click", function (event) {
                     event.preventDefault();
                     console.log(event.target.parentElement.parentElement.remove());
+                    
                     Total = total - productos.precio;
                     contador = contador - 1
+                    pcontador.innerText = contador
+                    pcontador.innerText = contador
 
                 });
 
