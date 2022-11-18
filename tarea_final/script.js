@@ -39,25 +39,40 @@ peticion.addEventListener("readystatechange", function () {
             //crear fila de la tabla
             link.addEventListener("click", function (event) {
                 event.preventDefault();
-
                 var fila = document.createElement("tr");
-                var celdanombre = document.createElement("td");
-                celdanombre = productos.nombre;
-                fila.appendChild(celdanombre);
+
+               // var celdanombre = document.createElement("td");
+                //celdanombre = productos.nombre;
+                //fila.appendChild(celdanombre);
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            
+            
+            
+          
+
+                
+                
+                
+                
 
                 var celdaprecio = document.createElement("td");
                 celdaprecio = productos.precio;
                 fila.appendChild(celdaprecio);
 
-                //agregar elemento sumar en total y contador
-                var ptotal = document.getElementById("total");
-                total = total + productos.precio;
-                ptotal.innerText = total;
-
                 var pcontador = document.getElementById("cantidad")
                 contador = contador + 1
                 pcontador.innerText = contador
-                
+
                 //borrar de la fila
                 var celdaborrar = document.createElement("td");
                 var borrar = document.createElement("a");
@@ -65,6 +80,11 @@ peticion.addEventListener("readystatechange", function () {
                 borrar.innerText("X");
                 celdaborrar.appendChild(borrar);
                 fila.appendChild(celdaborrar);
+
+                //agregar elemento sumar en total y contador
+                var ptotal = document.getElementById("total");
+                total = total + productos.precio;
+                ptotal.innerText = total;
 
                 //borrar elemento restar en total y contador
                 borrar.addEventListener("click", function (event) {
