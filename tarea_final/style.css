@@ -23,6 +23,14 @@ h2 {
     text-align: center;
 }
 
+#carrito table {
+    border-collapse:separate;
+    border-spacing:20px;
+}
+
+
+
+
 #modal {
     display: none;
 }
