@@ -143,7 +143,7 @@ var cerrar = document.getElementById("cerrarcaro");
 cerrar.addEventListener("click", function (event) {
     event.preventDefault();
     modal.style.display = "none"
-});
+});*/
 
 
 
