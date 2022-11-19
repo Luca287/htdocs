@@ -1,5 +1,5 @@
-body{
-    margin:50px;
+body {
+    margin: 50px;
 }
 
 h1 {
@@ -10,15 +10,19 @@ h2 {
     text-align: center;
 }
 
-#productos div{
+#productos div {
     display: inline-block;
-    margin-left:40px;
-    margin-right:40px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
-    border:solid black   
+    border: solid black
 }
 
-#modal{
+#productos div p {
+    text-align: center;
+}
+
+#modal {
     display: none;
 }
