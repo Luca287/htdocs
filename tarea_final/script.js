@@ -2,6 +2,7 @@
 var peticion = new XMLHttpRequest();
 var total = 0;
 var contador = 0;
+var precioMasAlto = -1;
 peticion.open("GET", "./productos.json", true);
 //peticion de los productos y creacion de los div
 peticion.addEventListener("readystatechange", function () {
@@ -86,11 +87,36 @@ peticion.addEventListener("readystatechange", function () {
     };
 });
 peticion.send();
-var precioMasAlto = -1;
-
+//abrir el modal de el precio mas caro
 var modal = document.getElementById("modal");
-
 var BotonMasCaro = document.getElementById("Caro");
+
+BotonMasCaro.addEventListener("click", function (event) {
+    even.prevendefault();
+    modal.style.display = "block";
+});
+
+//cerrar el modal de el precio mas caro
+var cerrar = document.getElementById("cerrarcaro")
+
+cerrar.addEventListener("click", function (event) {
+    even.prevendefault();
+    modal.style.display = "none"
+});
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
 BotonMasCaro.addEventListener("click", function (event) {
     event.preventDefault();
     modal.style.display = "block";
