@@ -92,7 +92,7 @@ var modal = document.getElementById("modal");
 var BotonMasCaro = document.getElementById("Caro");
 
 BotonMasCaro.addEventListener("click", function (event) {
-    even.prevendefault();
+    event.preventDefault();
     modal.style.display = "block";
 });
 
@@ -100,7 +100,7 @@ BotonMasCaro.addEventListener("click", function (event) {
 var cerrar = document.getElementById("cerrarcaro")
 
 cerrar.addEventListener("click", function (event) {
-    even.prevendefault();
+    event.preventDefault();
     modal.style.display = "none"
 });
 
