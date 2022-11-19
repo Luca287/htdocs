@@ -28,12 +28,14 @@ h2 {
     border-spacing:20px;
 }
 
-.parrafos p{
+#parrafos p{
     display: inline-block;
     margin-right: 40px;
 }
     
-
+#carrito{
+    border: 3px solid black;
+}
 
 
 #modal {
