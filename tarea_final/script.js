@@ -2,7 +2,7 @@
 var peticion = new XMLHttpRequest();
 var total = 0;
 var contador = 0;
-var precioMasAlto = -1;
+var PrecioMasAlto = -1;
 
 peticion.open("GET", "./productos.json", true);
 //peticion de los productos y creacion de los div
@@ -95,6 +95,26 @@ var BotonMasCaro = document.getElementById("Caro");
 BotonMasCaro.addEventListener("click", function (event) {
     event.preventDefault();
     modal.style.display = "block";
+
+    var productosCarrito = document.querySelector("tbody").children;
+
+    for (let index = 0; index < productosCarrito.length; index++) {
+        const productorow = productosCarrito[index];
+
+        let productoNombre = productosrow.children[0].innerText;
+        let productoPrecio = Number(productosrow.children[1].innerText);
+
+
+        var preciomascaro = document.getElementById("preciomascaro");
+        precioMasAlto.innerText = preciomascaro;
+
+        if (productoPrecio > precioMasAlto) {
+
+            PrecioMasAlto.innerText = productoPrecio
+
+        };
+
+    };
 });
 
 //cerrar el modal de el precio mas caro
@@ -105,48 +125,9 @@ cerrar.addEventListener("click", function (event) {
     modal.style.display = "none"
 });
 
-//obtener el mas caro
-
-var productosCarrito = document.querySelector("tbody").children;
 
 
 
-
-
-
-
-
-
-/*
-
-
-BotonMasCaro.addEventListener("click", function (event) {
-    event.preventDefault();
-    modal.style.display = "block";
-
-    
-    for (let index = 0; index < productosCarrito.length; index++) {
-        const productorow = productosCarrito[index];
-
-        let productoNombre = productosrow.children[0].innerText;
-        let productoPrecio = Number(productosrow.children[1].innerText);
-
-        if (productoPrecio > precioMasAlto) {
-
-            precioMasAlto = productoPrecio
-
-        };
-    };
-    var preciomascaro = document.getElementById("preciomascaro");
-    precioMasAlto.innerText = preciomascaro;
-});
-
-
-var cerrar = document.getElementById("cerrarcaro");
-cerrar.addEventListener("click", function (event) {
-    event.preventDefault();
-    modal.style.display = "none"
-});*/
 
 
 
