@@ -93,6 +93,13 @@ var PrecioMasAlto = -1;
 //abrir el modal de el precio mas caro
 var modal = document.getElementById("modal");
 var BotonMasCaro = document.getElementById("Caro");
+BotonMasCaro.addEventListener("click", function (event) {
+    event.preventDefault();
+    modal.style.display = "block";
+
+    var productosCarrito = document.querySelector("tbody").children;
+
+});
 
 //cerrar el modal de el precio mas caro
 var cerrar = document.getElementById("cerrarcaro")
@@ -101,16 +108,8 @@ cerrar.addEventListener("click", function (event) {
     event.preventDefault();
     modal.style.display = "none"
 });
-//evento del boton
-BotonMasCaro.addEventListener("click", function (event) {
-    event.preventDefault();
-    modal.style.display = "block";
-
-    var productosCarrito = document.querySelector("tbody").children;
 
 
-
-});
 
 
 
