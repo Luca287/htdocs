@@ -2,7 +2,6 @@
 var peticion = new XMLHttpRequest();
 var total = 0;
 var contador = 0;
-var PrecioMasAlto = -1;
 
 peticion.open("GET", "./productos.json", true);
 //peticion de los productos y creacion de los div
@@ -88,6 +87,9 @@ peticion.addEventListener("readystatechange", function () {
     };
 });
 peticion.send();
+
+var PrecioMasAlto = -1;
+
 //abrir el modal de el precio mas caro
 var modal = document.getElementById("modal");
 var BotonMasCaro = document.getElementById("Caro");
@@ -101,8 +103,8 @@ BotonMasCaro.addEventListener("click", function (event) {
     for (let index = 0; index < productosCarrito.length; index++) {
         const productorow = productosCarrito[index];
 
-        let productoNombre = productosrow.children[0].innerText;
-        let productoPrecio = Number(productosrow.children[1].innerText);
+        //let productoNombre = productosrow.children[0].innerText;
+        //let productoPrecio = Number(productosrow.children[1].innerText);
 
 
         var preciomascaro = document.getElementById("preciomascaro");
