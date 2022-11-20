@@ -94,31 +94,6 @@ var PrecioMasAlto = -1;
 var modal = document.getElementById("modal");
 var BotonMasCaro = document.getElementById("Caro");
 
-BotonMasCaro.addEventListener("click", function (event) {
-    event.preventDefault();
-    modal.style.display = "block";
-
-    var productosCarrito = document.querySelector("tbody").children;
-
-    for (let index = 0; index < productosCarrito.length; index++) {
-        const productorow = productosCarrito[index];
-
-        //let productoNombre = productosrow.children[0].innerText;
-        //let productoPrecio = Number(productosrow.children[1].innerText);
-
-
-        var preciomascaro = document.getElementById("preciomascaro");
-        precioMasAlto.innerText = preciomascaro;
-
-        if (productoPrecio > precioMasAlto) {
-
-            PrecioMasAlto.innerText = productoPrecio
-
-        };
-
-    };
-});
-
 //cerrar el modal de el precio mas caro
 var cerrar = document.getElementById("cerrarcaro")
 
@@ -126,26 +101,35 @@ cerrar.addEventListener("click", function (event) {
     event.preventDefault();
     modal.style.display = "none"
 });
+//evento del boton
+BotonMasCaro.addEventListener("click", function (event) {
+    event.preventDefault();
+    modal.style.display = "block";
+
+    var productosCarrito = document.querySelector("tbody").children;
+
+
+
+});
 
 
 
 
 
+/* for (let index = 0; index < productosCarrito.length; index++) {
+    const productorow = productosCarrito[index];
+
+    //let productoNombre = productosrow.children[0].innerText;
+    //let productoPrecio = Number(productosrow.children[1].innerText);
 
 
+    var preciomascaro = document.getElementById("preciomascaro");
+    precioMasAlto.innerText = preciomascaro;
 
+    if (productoPrecio > precioMasAlto) {
 
+        PrecioMasAlto.innerText = productoPrecio
 
-    
+    };
 
-    
-      
-   
-
-
-
-
-
-
-
-
+}; */
