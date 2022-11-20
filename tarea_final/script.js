@@ -108,7 +108,7 @@ cerrar.addEventListener("click", function (event) {
 //obtener el mas caro
 
 var productosCarrito = document.querySelector("tbody").children;
-var productosCarrito = document.querySelector("#carrito tbody").children;
+
 
 
 
