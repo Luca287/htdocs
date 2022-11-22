@@ -115,7 +115,7 @@ botonMasCaro.addEventListener("click", function (event) {
     console.log("producto mas caro:", productoMasCaro)
 
     var mostrarcaro = document.getElementById("preciomascaro")
-    mostrarcaro.innerText = "producto:" + productoMasCaro + "" + "precio:" + precioMasAlto
+    mostrarcaro.innerText = "producto:" + " " + productoMasCaro + " " + "precio:" + " " + precioMasAlto
 });
 
 //cerrar el modal de el precio mas caro
