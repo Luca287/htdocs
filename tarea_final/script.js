@@ -99,23 +99,23 @@ botonMasCaro.addEventListener("click", function (event) {
     contenedor.style.border = "solid red"
 
     var productosCarrito = document.querySelector('#carrito tbody').children;
-    var PrecioMasAlto = 0;
-    var ProductoMasCaro = "";
+    var precioMasAlto = 0;
+    var productoMasCaro = "";
     for (let index = 0; index < productosCarrito.length; index++) {
         const productorow = productosCarrito[index];
 
         let productoNombre = productorow.children[0].innerText;
         let productoPrecio = Number(productorow.children[1].innerText);
 
-        if (productoPrecio > PrecioMasAlto) {
-            PrecioMasAlto = productoPrecio
-            ProductoMasCaro = productoNombre;
+        if (productoPrecio > precioMasAlto) {
+            precioMasAlto = productoPrecio
+            productoMasCaro = productoNombre;
         }
     }
-    console.log("producto mas caro:", ProductoMasCaro)
+    console.log("producto mas caro:", productoMasCaro)
 
     var mostrarcaro = document.getElementById("preciomascaro")
-    mostrarcaro.innerText = ProductoMasCaro + PrecioMasAlto
+    mostrarcaro.innerText = "producto:" + productoMasCaro + "" + "precio:" + precioMasAlto
 });
 
 //cerrar el modal de el precio mas caro
