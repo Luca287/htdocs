@@ -52,6 +52,7 @@ td a{
     display: none;
 }
 
-#modal #contenedor a {
-    display: inline;
+#contenedor a {
+    text-decoration-line: none;
+    color: red;
 }
