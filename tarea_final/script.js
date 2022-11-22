@@ -103,16 +103,16 @@ BotonMasCaro.addEventListener("click", function (event) {
     for (let index = 0; index < productosCarrito.length; index++) {
         const productorow = productosCarrito[index];
 
-        let productoNombre = productosrow.children[0].innerText;
-        let productoPrecio = Number(productosrow.children[1].innerText);
+        let productoNombre = productorow.children[0].innerText;
+        let productoPrecio = Number(productorow.children[1].innerText);
 
         if (productoPrecio > PrecioMasAlto) {
             PrecioMasAlto = productoPrecio
             ProductoMasCaro = productoNombre;
         }
 
-        var mostrarcaro = getElementById("#preciomascaro")
-        mostrarcaro.innerText = productonombre,"",productoPrecio
+        var mostrarcaro = document.getElementById("preciomascaro")
+        mostrarcaro.innerText = productoNombre + "" + productoPrecio
     }
     console.log("el mas caro es", ProductoMasCaro)
 });
