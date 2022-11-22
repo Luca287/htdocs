@@ -117,7 +117,6 @@ BotonMasCaro.addEventListener("click", function (event) {
     console.log("el mas caro es", ProductoMasCaro)
 });
 
-
 //cerrar el modal de el precio mas caro
 var cerrar = document.getElementById("cerrarcaro")
 
