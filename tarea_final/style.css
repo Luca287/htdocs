@@ -34,6 +34,11 @@ h2 {
     border-spacing: 20px;
 }
 
+td a{
+    text-decoration-line: none;
+    color: red;
+}
+
 #parrafos p {
     display: inline-block;
     margin-right: 40px;
