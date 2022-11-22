@@ -40,7 +40,7 @@ peticion.addEventListener("readystatechange", function () {
             //crear fila de la tabla
             link.addEventListener("click", function (event) {
                 event.preventDefault();
-                
+
                 var fila = document.createElement("tr");
 
                 var celdanombre = document.createElement("td");
@@ -59,7 +59,7 @@ peticion.addEventListener("readystatechange", function () {
                 var pcontador = document.getElementById("cantidad")
                 contador = contador + 1
                 pcontador.innerText = contador
-                
+
                 //borrar de la fila
                 var celdaborrar = document.createElement("td");
                 var borrar = document.createElement("a");
@@ -91,12 +91,12 @@ peticion.send();
 //abrir el modal y mostar el precio mas caro
 var modal = document.getElementById("modal");
 
-var BotonMasCaro = document.getElementById("Caro");
+var botonMasCaro = document.getElementById("Caro");
 
-BotonMasCaro.addEventListener("click", function (event) {
+botonMasCaro.addEventListener("click", function (event) {
     event.preventDefault();
     modal.style.display = "block";
-    contenedor.style.border ="solid red"
+    contenedor.style.border = "solid red"
 
     var productosCarrito = document.querySelector('#carrito tbody').children;
     var PrecioMasAlto = -1;
@@ -111,12 +111,11 @@ BotonMasCaro.addEventListener("click", function (event) {
             PrecioMasAlto = productoPrecio
             ProductoMasCaro = productoNombre;
         }
-
-        var mostrarcaro = document.getElementById("preciomascaro")
-        mostrarcaro.innerText =  ProductoMasCaro + PrecioMasAlto
-
     }
     console.log("producto mas caro:", ProductoMasCaro)
+
+    var mostrarcaro = document.getElementById("preciomascaro")
+    mostrarcaro.innerText = ProductoMasCaro + PrecioMasAlto
 });
 
 //cerrar el modal de el precio mas caro
