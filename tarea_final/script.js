@@ -96,6 +96,7 @@ var BotonMasCaro = document.getElementById("Caro");
 BotonMasCaro.addEventListener("click", function (event) {
     event.preventDefault();
     modal.style.display = "block";
+    contenedor.style.border ="black"
 
     var productosCarrito = document.querySelector('#carrito tbody').children;
     var PrecioMasAlto = -1;
@@ -112,7 +113,8 @@ BotonMasCaro.addEventListener("click", function (event) {
         }
 
         var mostrarcaro = document.getElementById("preciomascaro")
-        mostrarcaro.innerText = productoNombre + "" + productoPrecio
+        mostrarcaro.innerText =  productoNombre + productoPrecio
+
     }
     console.log("el mas caro es", ProductoMasCaro)
 });
@@ -125,7 +127,7 @@ cerrar.addEventListener("click", function (event) {
     modal.style.display = "none"
 });
 
-
+ 
 
 
 
