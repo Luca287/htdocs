@@ -99,7 +99,7 @@ botonMasCaro.addEventListener("click", function (event) {
     contenedor.style.border = "solid red"
 
     var productosCarrito = document.querySelector('#carrito tbody').children;
-    var PrecioMasAlto = -1;
+    var PrecioMasAlto = 0;
     var ProductoMasCaro = "";
     for (let index = 0; index < productosCarrito.length; index++) {
         const productorow = productosCarrito[index];
