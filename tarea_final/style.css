@@ -52,7 +52,13 @@ td a{
     display: none;
 }
 
+#contenedor{
+    display: flex;
+    align-items: center;
+}
+
 #contenedor a {
     text-decoration-line: none;
     color: red;
+    margin-left: 20px;
 }
