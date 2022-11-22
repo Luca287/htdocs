@@ -88,7 +88,7 @@ peticion.addEventListener("readystatechange", function () {
 });
 peticion.send();
 
-//abrir el modal de el precio mas caro
+//abrir el modal y mostar el precio mas caro
 var modal = document.getElementById("modal");
 
 var BotonMasCaro = document.getElementById("Caro");
@@ -110,6 +110,9 @@ BotonMasCaro.addEventListener("click", function (event) {
             PrecioMasAlto = productoPrecio
             ProductoMasCaro = productoNombre;
         }
+
+        var mostrarcaro = getElementById("#preciomascaro")
+        mostrarcaro.innerText = productonombre,"",productoPrecio
     }
     console.log("el mas caro es", ProductoMasCaro)
 });
