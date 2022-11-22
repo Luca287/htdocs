@@ -23,20 +23,30 @@ h2 {
     text-align: center;
 }
 
-#carrito table {
-    border-collapse:separate;
-    border-spacing:20px;
+#productos div a {
+   text-decoration-line: none;
+   color: blue;
+   margin-left: 60px;
 }
 
-#parrafos p{
+#carrito table {
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+#parrafos p {
     display: inline-block;
     margin-right: 40px;
 }
-    
-#carrito{
+
+#carrito {
     border: 3px solid black;
 }
 
 #modal {
     display: none;
+}
+
+#modal #contenedor a {
+    display: inline;
 }
